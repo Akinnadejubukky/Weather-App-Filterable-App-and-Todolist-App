@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<title>Combined Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="animate.css">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    /* .bgimg-1 {
+        background-size: cover;
+        min-height: 100%;
+    } */
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+
+    .col-md-6 {
+        text-align: center;
+        font-size: bolder;
+        color: rgb(243, 243, 184);
+    }
+
+    .w3-quarter {
+        text-align: justify;
+        margin-left: auto;
+
+    }
+
+    .carousel-caption {
+        text-align: justify;
+        margin-left: auto;
+        color: #ffffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-card" style="height: 120px;" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="/logo/bukkytech.png"
+                    style="width: 150px; height: 100px;" alt=""></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#home" class="w3-bar-item w3-button animated bounceIn delay-1s"><i class="fa fa-home"></i>
+                    HOME</a>
+                <a target="_blank" href="./todo//javascript-finished//index.html"
+                    class="w3-bar-item w3-button animated fadeInRight delay-1s"><i class="fa fa-list-alt"></i>TODO</a>
+                <a target="_blank" href="./list/index.html"
+                    class="w3-bar-item w3-button animated fadeInRightBig delay-1s"><i
+                        class="fa fa-search"></i></i>FITERABLE
+                    LIST</a>
+                <a target="_blank" href="./app/index.html" class="w3-bar-item w3-button animated rotateIn delay-1s "> <i
+                        class="fa fa-cloud"></i>WEATHER APP</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#todo" onclick="w3_close()" class="w3-bar-item w3-button">TODO</a>
+        <a href="#filterable list" onclick="w3_close()" class="w3-bar-item w3-button">FILTERABLE-LIST</a>
+        <a href="#weather app" onclick="w3_close()" class="w3-bar-item w3-button">WEATHER APP</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/photo2.jpeg" class="d-block w-100" alt="#">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tunga</h5>
+                        <p>Tunga is founded by ‘people-people’. We think that what you <br> make of your life is your
+                            own
+                            responsibility. But we would <br> like for everyone, especially the youth that holds the
+                            <br>
+                            world’s future, to be free and able to take <br> control of their own destiny.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/photo3.jpeg" class="d-block w-100" alt="#">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>EkoBits</h5>
+                        <p>EkoBits ICT Academy helps train youth from less formal <br> communities on digital skills in
+                            (
+                            graphics, UI/UX Web design & development) <br> to make them better persons and future
+                            leaders in
+                            the society. <br> Help us achieve this goal.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/photo4.jpeg" class="d-block w-100" alt="#">
+                    <div class="carousel-caption d-none d-md-block">`
+                        <h5>Google</h5>
+                        <p>Google LLC is an American multinational technology company <br> that specializes in
+                            Internet-related services and products, <br> which include online advertising technologies,
+                            <br>
+                            search engine, cloud computing, software, and hardware.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="w3-display-bottomleft w3-text-blue w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </header>
+
+    <!-- Welcome page -->
+    <div class="container">
+        <div class="row" style="margin-top: 50px; background-color: rgb(126, 102, 102);">
+            <div class="col-md-6 animated bounceIn delay-1s">
+                <h3 class="card-title" style="font-weight: bold; padding-top: 50px;">Welcome to BukkyTech</h3>
+                <p class="card-text">BukkyTech is an American multinational technology company that specializes
+                    in
+                    Internet -related services and products, which include online advertising technologies,
+                    search
+                    engine, cloud computing, software, and hardware. It is considered one of the Big Four
+                    technology
+                    companies, alongside Amazon, Apple, and Google.</p>
+                <p class="card-text"><small style="color: #111016;">Last updated 3 mins ago</small></p>
+            </div>
+            <div class="col-md-6 w3-hover-opacity animated rotateIn delay-1s">
+                <img src="/img/photo4.jpeg" class="card-img" alt="#">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- About the company Section -->
+    <div class="container" style="margin-top: 50px;margin-bottom: 50px;background-color: #ffffff;" id="about">
+        <h3 class="w3-center">ABOUT THE COMPANY</h3>
+        <p class="w3-center w3-large">Key features of our company</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Responsive</p>
+                <p>Our goal is to build web pages that detect the visitor's screen size and
+                    orientation and change the layout accordingly.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Passion</p>
+                <p> Our passion is more than just enthusiasm or excitement, it is the ambition that is materialized into
+                    action
+                    to put as much heart, mind body and soul into satisfying our customers.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Design</p>
+                <p>We are part of 'The Career Strategist' companies. On the surface, the meaning behind the
+                    word “designer” may seem obvious.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Support</p>
+                <p>Character cannot be developed in ease and quiet. Only through experience of trial and suffering can
+                    the soul be strengthened, ambition inspired, and success achieved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding:0px 200px">
+        <div class="row">
+            <div class="col-md-4" style="padding: 50px;">
+                <h3>We know design.</h3>
+                <p>As to self-evaluation, that is harder. Some people have suggested that you just know, but that
+                    has never been the case for Us. And that is partly because We tend to keep tinkering, trying this or
+                    that, always second-guessing Ourself and wondering if the thing can be better.</p>
+                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+            </div>
+            <div class="col-md-8">
+                <img class="w3-image w3-round-large" src="/img/photo5.jpeg" alt="Buildings" width="700" height="0">
+            </div>
+        </div>
+    </div>
+
+    <!-- The Team Section -->
+    <div class="container-fluid"
+        style="padding: 70px 16px; background-color: #cac6c6; margin-top: 20px; margin-bottom: 20px;" id="team">
+        <div class="row"></div>
+        <h2 class="w3-center">THE TEAM</h2>
+        <p class="w3-center w3-large">The ones who runs this company</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-container">
+                    <div class="w3-card">
+                        <img src="/img/tunga.png" alt="Tunga" style="width:20%">
+                        <div class="w3-container">
+                            <h3>Tunga</h3>
+                            <p class="w3-opacity">CEO & Founder</p>
+                            <p>Tunga is founded by ‘people-people’. We think that what you make of your life is your own
+                                responsibility. But we would like for everyone, especially the youth that holds the
+                                world’s
+                                future, to be free and able to take control of their own destiny.</p>
+                            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                    Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/img/ekobits.png" alt="Ekobits" style="width:20%">
+                    <div class="w3-container">
+                        <h3>Ekobits</h3>
+                        <p class="w3-opacity">Art Director</p>
+                        <p>EkoBits ICT Academy helps train youth from less formal communities on digital skills in (
+                            graphics, UI/UX Web design & development) to make them better persons and future leaders in
+                            the society. Help us achieve this goal.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/img/google.png" alt="Mike" style="width:30%">
+                    <div class="w3-container">
+                        <h3>Google</h3>
+                        <p class="w3-opacity">Web Designer</p>
+                        <p>Google LLC is an American multinational technology company that specializes in
+                            Internet-related services and products, which include online advertising technologies,
+                            search engine, cloud computing, software, and hardware.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="/img/microsoft.png" alt="Microsoft" style="width:30%">
+                    <div class="w3-container">
+                        <h3>Microsoft</h3>
+                        <p class="w3-opacity">Microsoft</p>
+                        <p>Microsoft Corporation is an American multinational technology company with headquarters in
+                            Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer
+                            software, consumer electronics.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-24">
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">14+</span>
+            <br>Partners
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">55+</span>
+            <br>Projects Done
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">89+</span>
+            <br>Happy Clients
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">150+</span>
+            <br>Meetings
+        </div>
+    </div>
+
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-container w3-light-grey w3-padding-64">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Our Skills.</h3>
+                <p>Our skills are the abilities and knowledge needed to perform specific tasks. They are practical,
+                    and often relate to mechanical, information technology, mathematical, or scientific tasks.</p>
+                <p> Some examples include knowledge of programming languages, mechanical equipment, or tools.</p>
+            </div>
+            <div class="w3-col m6">
+                <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Development</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p class="w3-hover-text-green">Designed by Bukola <a href="#" style="padding: 50px;">Copyright 2020</a> </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        let mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

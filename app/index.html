@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App- JavaScript</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <br><br>
+    <div class="containers">
+        <div class="app-title"><p><span class="weather">Weather</span> | <span class="location">Location</span> </p></div>
+        <div class="notification"></div>
+        <div class="weather-container">
+            <div class="weather-icon"><img src="img/weather.png" alt="#"></div>
+            <div class="temperature-value"><p>- <span>C</span></p></div>
+            <div class="temperature-description"><p> - </p></div>
+            <div class="location"><p> - </p></div>
+            <button type="button" data-toggle="modal" data-target="#myModal">Show More</button>
+            <div>
+                <span id="location"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-wrapper">
+            <ul>
+                <li><a href="#" id="myBtn"><img src="https://image.flaticon.com/icons/svg/1767/1767366.svg" class="img" alt=""></a></li>
+                <li class="active"><a href=""> <img src="https://image.flaticon.com/icons/svg/1767/1767366.svg" class="img" alt=""></a></li>
+                <li><a href="#"><img src="https://image.flaticon.com/icons/svg/1767/1767366.svg" class="img" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Welcome to <br> <span class="tem">TE</span><span class="temp">MP</span></h4>
+            </div>
+            <div class="modal-body">
+              <div class="container p-5">
+                  <div class="row">
+                      <div class="col-md-4 justify-content-center">
+                          <div class="card shadow">
+                                <div class="text-center">
+                                                                                                         xnxxxn 
+                                    <p>Temperature</p>
+                                    <img src="img/weather.png" width="50" alt="">
+                                    <p>Date: <b><p id="date"></p></b> </p>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer r">
+              <button type="button" class="close text-center" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

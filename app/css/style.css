@@ -1,0 +1,153 @@
+body{
+    margin:0;
+    font-family:century gothic;
+    padding:0;
+}
+
+.containers{
+    margin:auto;
+    display:block;
+    left:0;
+    right:0;
+    background-color: rgb(255, 255, 255);
+    width:300px;
+    justify-content: center;
+    height:530px;
+    border-radius: 19px;
+    outline: none;
+    box-shadow: 0.5px 2px 4px 2px rgba(151, 151, 151, 0.63);
+
+}
+
+img{
+    width: 200px;
+    display: block;
+    margin:auto;
+    left:0;
+    right:0;
+    justify-content: center;
+}
+
+.app-title{
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+
+.temperature-value, .temperature-description, .location{
+    text-align: center;
+    display: inline;
+}
+
+button{
+    width: 130px;
+    height:38px;
+    border:2px solid #ffc106;
+    background:transparent;
+    left:35%;
+    position: absolute;
+    border-radius: 70px;
+}
+
+.location{
+    font-size:16px;
+    font-weight: 550px;
+    color:  #ffc106;
+}
+
+.weather{
+    font-size:16px;
+    font-weight: 550px;
+    color:  #065dff;
+}
+
+button:hover{
+    cursor: -webkit-grab;
+    background: #1ab5ed;
+    transition: 0.4s ease-in-out;
+    border:none;
+    color:white;
+    box-shadow: 0.5px 2px 4px 2px rgba(151, 151, 151, 0.418);
+
+
+}
+/* 
+div > span{
+    padding:10px;
+    display:inline-flex;
+    margin-top:66px;
+    margin-left:30px;
+    justify-content: center;
+    border-radius: 109%;
+    background-color: #1ab5ed;
+}
+
+div > span:hover{
+    cursor: pointer;
+    opacity: 50%;
+    transition:0.6s ease-in-out;
+    box-shadow: 0.5px 2px 4px 2px rgba(151, 151, 151, 0.63);
+
+} */
+
+div .menu-wrapper{
+    height:100px;
+    width:100%;
+}
+
+
+ul li{
+    display: inline-block;
+    margin-top:80px;
+    width:35px;
+    height:35px;
+    margin-left: 25px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 500px;
+    
+}
+
+a:hover{
+    box-shadow: 0.5px 2px 4px 2px rgba(151, 151, 151, 0.418);
+    cursor: pointer;
+}
+
+ul li a{
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    color: #1ab5ed;
+    font-size:20px;
+}
+
+.active{
+    font-size:40px !important;
+    color: #0892c4;
+}
+
+.img{
+    margin-top: 5px;
+    width:20px;
+}
+
+.close{
+    text-align: center;
+    color:black;
+}
+
+.modal-header{
+    text-align: center;
+}
+
+.tem{
+    color: #ffc106;
+    font-size:30px;
+}
+
+.temp{
+    color: #0892c4;
+    font-size:30px;
+}
